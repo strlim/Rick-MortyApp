@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="imgs/Ester-Mendez.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
+    <title>Ester Méndez - PWA</title>
+</head>
+<body>
+
+    <header id="header">
+        <nav class="navbar navbar-expand-md container-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="imgs/Ester-Mendez.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><img src="imgs/menu.png" alt=""></span>
+              </button>
+              <div class="collapse navbar-collapse nav-pills" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="index.html">Inicio</a>
+                  <a class="nav-link" href="favoritos.html">Favoritos</a>
+                  <a class="nav-link active" aria-current="page" href="#">Recopilacion</a>
+                  <a class="nav-link d-none" id="offM" href="offline.html">Off</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <div class="container">
+      <h2 class="pt-4 fs-1 fw-bold text-center">Rick y Morty TV</h2>
+      <p class="text-center text-muted fw-light mb-0">51 episodios disponibles de momento. </p>
+    </div>
+    <section class="portada recopilacion">
+      <div id="portada-recop">
+          <div id="img-tv">
+            <img id="img-recop" src="imgs/portada.jpg" alt="">
+          </div>
+        </div>
+    </section>
+
+    <div class="contenedor tv">
+      <div class="row">
+
+        <div id="col-chap" class="d-flex align-items-center col-md-4 col-sm-10 py-2">
+          <label class=" px-2">Episodio</label>
+          <input id="episode" type="number">
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center col-md-4 col-sm-10 py-2">
+          <button id="btn-recop" class="btn btn-light">Ver</button>
+        </div>
+
+      </div>
+
+      <div id="detalles" class="container mt-4 py-5">
+        <h3 class="text-center fw-700">Detalles del episodio</h3>
+        <ul id="details-recop" class="pt-4">
+          <li id="ini-details">Episodio: </li>
+          <li class="d-none">Temporada: </li>
+          <li>Nombre: </li>
+          <li>Fecha de emisión: </li>
+        </ul>
+      </div>
+            
+    </div>
+
+
+    <footer></footer>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/recop.js"></script>
+  </body>
+</html>

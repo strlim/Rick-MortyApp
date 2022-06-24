@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
+
+    <link rel="icon" href="imgs/Ester-Mendez.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
+    <title>Ester Méndez - PWA</title>
+</head>
+<body>
+
+    <header id="header">
+        <nav class="navbar navbar-expand-md container-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="imgs/Ester-Mendez.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><img src="imgs/menu.png" alt=""></span>
+              </button>
+              <div class="collapse navbar-collapse nav-pills" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="index.html">Inicio</a>
+                  <a class="nav-link active" aria-current="page" href="#">Favoritos</a>
+                  <a class="nav-link" href="recopilacion.html">Recopilacion</a>
+                  <a class="nav-link d-none" id="offM" href="offline.html">Off</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section class="portada favoritos"><div id="portada-favs">
+        <div class="contenedor favs"></div>
+    </section>
+
+    <div class="container">
+      <h2 class="py-4 fs-1 fw-bold text-center">Personajes marcados como favoritos</h2>
+    </div>
+    
+    <div class="container" id="favs-cards">
+      
+      <!-- Las cards acá-->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+      </div>
+
+    <footer></footer>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/favs.js"></script>
+</body>
+</html>

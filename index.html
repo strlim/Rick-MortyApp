@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="manifest" href="manifest.json">
+    <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
+
+    <link rel="icon" href="imgs/Ester-Mendez.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
+    <title>Ester Méndez - PWA</title>
+</head>
+<body>
+
+    <header id="header">
+        <nav class="navbar navbar-expand-sm container-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="imgs/Ester-Mendez.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><img src="imgs/menu.png" alt="menu"></span>
+              </button>
+              <div class="collapse navbar-collapse nav-pills warning" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  <a class="nav-link" href="favoritos.html">Favoritos</a>
+                  <a class="nav-link" href="recopilacion.html">Recopilacion</a>
+                  <a class="nav-link" id="offM" href="offline.html">Off</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <section class="portada">
+      <div id="portada">  </div>
+    </section>
+
+
+    <div class="row contenedor d-flex justify-content-center">
+      <div class="col-sm-11 col-lg-5 py-3">
+        <h2 class="py-4 fs-1 fw-bold text-center">¿A qué personaje quéres ver?</h2>
+        <div class="d-flex justify-content-center">
+            <input type="text" class="form-control mx-2" placeholder="Nombre del personaje" aria-label="Recipient's username" aria-describedby="btn-home" id="input-home">
+            <button class="btn btn-success" type="button" id="btn-home">Buscar</button>
+        </div>
+      </div>
+      
+      <div class="col-sm-11 col-lg-5 py-3">
+        <div id="card-home" class="card mb-3" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-4 d-flex justify-content-center">
+              <img id="img-home" src="imgs/snuff.gif" class="img-fluid rounded-start" alt="La dona simpson">
+            </div>
+            <div class="col-md-8 ">
+              <div class="card-body">
+                <h5 id="id-home" class="d-none">#</h5>
+                <h5 id="name-home" class="card-title fs-2">Snuffles</h5>
+                <h6 id="race-home" class="card-subtitle mb-2 text-muted">Un perro</h6>
+                <p id="more-home" class="card-text">Hola, dejamos a Snuffles a cargo, dile a quien deseas encontrar.</p>
+                <form action=""><button id="favs-home" href="#" class="link-success" type="submit">Agregar a favoritos</button> </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+    </div>
+
+    <div class="container" id="favs-cards">
+      
+      <!-- Las cards acá-->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+      </div>
+
+    </div>
+
+    <footer></footer>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/register-sw.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
