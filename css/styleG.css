@@ -12,7 +12,7 @@ body {
 }
 
 #nav-Game .nav-link{
-    min-width: 20vw;
+    min-width: 20%;
     margin: 1vh auto;
     color: #198754;
 }
