@@ -24,7 +24,14 @@ p, li { font-family: var(--secundario); }
 header {
     min-height: 7vh;
 }
-
+.demo {
+    width: 75%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    text-align: center;
+}
 .nav-pills .nav-link.active{
     background-color: var(--pAmarillo);
     color: black;
